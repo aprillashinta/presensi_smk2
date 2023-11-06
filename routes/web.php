@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/guru', function(){
+    return view('master.guru.index');
+});
+
+Route::get('/guru/tambah', function(){
+    return view('master.guru.tambah');
+});
+
+Route::get('/siswa', function(){
+    return view('master.siswa.index');
+});
